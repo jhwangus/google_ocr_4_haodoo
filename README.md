@@ -11,12 +11,22 @@ Google Doc 有一隱藏功能。當其第一次打開某個 PDF 檔案時，將�
 	1. 安裝 ImageMagick
      從 https://imagemagick.org/script/download.php 下載並安裝 ImageMagick。
 
-### 轉換圖像檔成 pdf 檔
+### 轉換圖像檔成 pdf 檔（手動）
 
 	1. 打開一個命令列（command prompt）
-	2. 將圖片轉換為 PDF
-      convert image_000*.jpg image_001*.jpg image_002*.jpg image_003*.jpg image_004*.jpg book1.pdf
-	3. 檢查 PDF 大小，確認小於40MB。如果 PDF 大小超過 40 MB，可能需要減少轉換的圖像檔案數量。
+ 	2. 更換至圖片所在目錄。
+	3. 將圖片轉換為 PDF
+      convert 0000* 0001* 0002* 0003* 0004* book1.pdf
+	4. 檢查 PDF 大小，確認小於40MB。如果 PDF 大小超過 40 MB，可能需要減少轉換的圖像檔案數量。
+
+### 轉換圖像檔成 pdf 檔（快速）
+
+	1. 打開一個命令列（command prompt）
+	2. 更換至圖片所在目錄
+	3. 執行 img2pdf.bat
+      img2pdf
+	4. 自動將 000***.jpg 或 000***.png 每50個檔轉成一個 PDF 檔，最多至 000999.*
+
 
 ### 用 Google Docs 進行 OCR
 
