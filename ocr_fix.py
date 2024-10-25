@@ -1,3 +1,7 @@
+# ocr_fix.py
+# (c) 2024, by Jack Hwang, All Rights Reserved.
+# This Python scirpt search and convert English punchuation symbols to Traditional Chinese's own.
+
 import pyperclip
 
 def search_replace_multiple(search_replace_pairs):
