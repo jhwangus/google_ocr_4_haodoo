@@ -116,7 +116,7 @@ setlocal ENABLEDELAYEDEXPANSION
 
 rem (C)2024, Jack Hwang, All Rights Reserved
 rem
-rem This DOS batch file uses ImageMagicK command "convert" to
+rem    This DOS batch file uses ImageMagicK command "convert" to
 rem    convert image files into PDF files.  Two caveats:
 rem    1. It assume image filenames are in "000xxx.ext"
 rem       format, e.g., 000100.jpg or 000201.png
