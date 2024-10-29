@@ -19,29 +19,34 @@ Google Doc 有一隱藏功能。當其第一次打開某個PDF檔案時，將會
 
 ### 安裝
 
-1. 安裝 ImageMagick：從 https://imagemagick.org/script/download.php 下載並安裝 ImageMagick。
-2. 安裝 img2pdf.bat（見附錄）
+1. 安裝 ImageMagick
+    > 從 https://imagemagick.org/script/download.php 下載並安裝 ImageMagick。
+3. 安裝 img2pdf.bat（見附錄）
 
 ### 轉換圖像檔成 pdf 檔（快速）
 
 1. 打開一個命令列（command prompt）
 2. 更換至圖像檔所在目錄
-3. 執行 img2pdf.bat，自動將 000***.jpg 或 000***.png 每50個檔轉成一個 PDF 檔，最多至 000999.*
+3. 執行 img2pdf.bat
+   > 自動將 000***.jpg 或 000***.png 每50個檔轉成一個 PDF 檔，最多至 000999.*
 
 ### 轉換圖像檔成 pdf 檔（手動）
 
 1. 打開一個命令列（command prompt）
 2. 更換至圖像檔所在目錄。
 3. 將圖像檔轉換為 PDF檔
-	convert 0000* 0001* 0002* 0003* 0004* book1.pdf
+    > convert 0000* 0001* 0002* 0003* 0004* book1.pdf
 
 請確認一次不超過80個圖像檔，且最後 PDF 檔大小不超過40MB。
 
 ### 用 Google Docs 打開PDF檔，執行 OCR。
 
 1. 將 book1.pdf 檔上傳至 Google Drive。
-2. 在 Google Drive 的 book1.pdf 上按滑鼠右鍵，選擇 Open with Google Doc，將會自動轉換成 book1.doc 文字檔。若未能轉換，應該是 book1.pdf 太大（超過40MB或超過80頁），請減少圖像檔數量。
-3. OCR後文字字型超大。此時按 CTRL-A，選擇整個文檔。再用滑鼠點上面 MENU 的**格式 -> 清除格式**，即可恢復正常大小。
+2. 在 Google Drive 的 book1.pdf 上按滑鼠右鍵，選擇 Open with Google Doc，將會自動轉換成 book1.doc 文字檔。
+   > 若未能轉換，應該是 book1.pdf 太大（超過40MB或超過80頁），請減少圖像檔數量。
+4. OCR後文字字型超大。
+   > 此時按 CTRL-A，選擇整個文檔。
+   > 再用滑鼠點上面 MENU 的**格式 -> 清除格式**，即可恢復正常大小。
 
 ## 快速轉換英文標點符號成繁體中文標點符號
 
@@ -61,18 +66,18 @@ Google Doc 的 OCR 預設標點符號為英文標點符號，所以OCR產生的�
 2. 安裝pyperclip 模組。在命令提示符或終端中運行 pip install pyperclip。
 3. 將ocr_fix.py 存在電腦上，如：D:\py\ocr_fix.py。
 4. 創建桌面捷徑
-	a. 右鍵單擊桌面，選擇「新增」->「捷徑」。
-	b. 在「位置」欄中輸入 python D:\py\ocr_fix.py
-	c. 單擊「下一步」。
-	d. 為桌面捷徑命名（例如，「OCR_FIX」）。
-	e. 單擊「完成」。
+    1. 右鍵單擊桌面，選擇「新增」->「捷徑」。
+    1. 在「位置」欄中輸入 python D:\py\ocr_fix.py
+    1. 單擊「下一步」。
+    1. 為桌面捷徑命名（例如，「OCR_FIX」）。
+    1. 單擊「完成」。
 
 ### 用法
 
 1. 將文本複製到剪貼板，如 CTRAL-A，然後 CTRL-C。
 2. 雙擊桌面捷徑。
-	a. 程式將自動運行，在您的剪貼板內容中搜索指定標點符號，並將它們替換為相應的符號。
-	b. 修改後的內容將被保留於剪貼板。
+    1. 程式將自動運行，在您的剪貼板內容中搜索指定標點符號，並將它們替換為相應的符號。
+    1. 修改後的內容將被保留於剪貼板。
 3. 在編輯的檔案內適當位置，按 CTRL-V。
 
 ### 客製化
