@@ -132,11 +132,10 @@ rem       example, if a book has only 400 pages, it will
 rem       still try to convert 401~999 pages but there will
 rem       not be respective pdf files generated.
 
-set loop=0,1,2,3,4,5,6,7,8,9
 set num1=0,1,2,3,4
 set num2=5,6,7,8,9
 
-for /L %%i in (0,1,8) do (
+for /L %%i in (0,1,9) do (
    set var=
    for %%j in (%num1%) do set var=!var! 000%%i%%j*
    rem echo !var!
@@ -172,6 +171,8 @@ convert  00070* 00071* 00072* 00073* 00074* book7_1.pdf
 convert  00075* 00076* 00077* 00078* 00079* book7_2.pdf
 convert  00080* 00081* 00082* 00083* 00084* book8_1.pdf
 convert  00085* 00086* 00087* 00088* 00089* book8_2.pdf
+convert  00090* 00091* 00092* 00093* 00094* book9_1.pdf
+convert  00095* 00096* 00097* 00098* 00099* book9_2.pdf
 
 F:\Documents\eBook\Work\haodoo\12823980 深海諜影\Images>dir *.pdf
  Volume in drive F is Data2
