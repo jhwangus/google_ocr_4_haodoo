@@ -65,9 +65,11 @@ Google Doc 的 OCR 預設標點符號為英文標點符號，所以OCR產生的�
 ### 安裝
 
 1. 安裝 Python 3（從 https://www.python.org/downloads/ 下載）
-2. 安裝pyperclip 模組。在命令提示符或終端中運行 pip install pyperclip。
-3. 將ocr_fix.py 存在電腦上，如：D:\py\ocr_fix.py。
-4. 創建桌面捷徑
+2. 安裝pyperclip 模組。在命令提示符或終端中運行
+   > pip install pyperclip。
+3. 將ocr_fix.py 存在電腦上，如：
+   > D:\py\ocr_fix.py。
+5. 創建桌面捷徑
     1. 右鍵單擊桌面，選擇「新增」->「捷徑」。
     1. 在「位置」欄中輸入 python D:\py\ocr_fix.py
     1. 單擊「下一步」。
@@ -77,7 +79,7 @@ Google Doc 的 OCR 預設標點符號為英文標點符號，所以OCR產生的�
 ### 用法
 
 1. 將文本複製到剪貼板，如 CTRL-A，然後 CTRL-C。
-2. 雙擊桌面捷徑。
+2. 雙擊桌面捷徑 OCR_FIX。
     1. 程式將自動運行，在剪貼板內容中搜索指定標點符號，並將它們替換為相應的符號。
     1. 修改後的內容將被保留於剪貼板。
 3. 在編輯的檔案內適當位置，按 CTRL-V 貼回。
