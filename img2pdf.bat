@@ -19,11 +19,10 @@ rem       example, if a book has only 400 pages, it will
 rem       still try to convert 401~999 pages but there will
 rem       not be respective pdf files generated.
 
-set loop=0,1,2,3,4,5,6,7,8,9
 set num1=0,1,2,3,4
 set num2=5,6,7,8,9
 
-for /L %%i in (0,1,8) do (
+for /L %%i in (0,1,9) do (
    set var=
    for %%j in (%num1%) do set var=!var! 000%%i%%j*
    rem echo !var!
