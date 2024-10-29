@@ -15,7 +15,7 @@ Google Doc 有一隱藏功能。當其第一次打開某個PDF檔案時，將會
 
 ## 將多份掃描圖像檔批次製成PDF檔
 
-利用開源免費軟體 ImageMagick 將多份掃描圖像檔製成 PDF 檔。
+利用開源免費軟體 ImageMagick 的 convert 命令，將多份掃描圖像檔製成 PDF 檔。
 
 ### 安裝
 
