@@ -1,4 +1,17 @@
-import pyperclip
+import pyperclip, re
+
+def replace_spaces_with_full_space(text):
+    """Replaces spaces between alphanumeric characters with '　'.
+
+    Args:
+        text: The input string.
+
+    Returns:
+        The modified string with spaces replaced by '　'.
+    """
+
+    pattern = r"([a-zA-Z0-9])\s+([a-zA-Z0-9])"
+    return re.sub(pattern, r"\1　\2", text)
 
 def search_replace_multiple(search_replace_pairs):
     """Search and replace multiple terms in the clipboard content.
@@ -9,6 +22,8 @@ def search_replace_multiple(search_replace_pairs):
 
     # Get the current clipboard content
     clipboard_content = pyperclip.paste()
+
+    clipboard_content = replace_spaces_with_full_space(clipboard_content)
 
     # Iterate through each search-replace pair and perform the replacement
     for search_term, replace_term in search_replace_pairs:
@@ -85,16 +100,16 @@ search_replace_pairs = [
     ("X", "Ｘ"),
     ("Y", "Ｙ"),
     ("Z", "Ｚ"), 
-    ("0", "０"),
-    ("1", "１"),
-    ("2", "２"),
-    ("3", "３"),
-    ("4", "４"),
-    ("5", "５"),
-    ("6", "６"),
-    ("7", "７"),
-    ("8", "８"),
-    ("9", "９"),
+#    ("0", "０"),
+#    ("1", "１"),
+#    ("2", "２"),
+#    ("3", "３"),
+#    ("4", "４"),
+#    ("5", "５"),
+#    ("6", "６"),
+#    ("7", "７"),
+#    ("8", "８"),
+#    ("9", "９"),
  ]
 
 search_replace_multiple(search_replace_pairs)
